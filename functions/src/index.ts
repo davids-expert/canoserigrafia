@@ -18,7 +18,7 @@ email.use(bodyParser.json());
 email.use(cors());
 
 email.post('/contact', (req: any, res: any) => {
-  contact(req.body.email);
+  contact(req.body);
   res.status(200).send();
 });
 
