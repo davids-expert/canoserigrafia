@@ -1,0 +1,122 @@
+<div class="container">
+  <div class=" p-4 my-4">
+    <hr class="divider" />
+    <h2 class="text-center text-lg text-uppercase my-0">
+      Contacto
+      <strong>Caño Serigrafía</strong>
+    </h2>
+    <hr class="divider" />
+    <div class="row">
+      <div class="col-lg-8">
+        <div
+          class="embed-responsive embed-responsive-16by9 map-container mb-4 mb-lg-0"
+        >
+          <iframe
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11569.594299564154!2d-5.6581723!3d43.5357329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x97898d4f6777552d!2zQ2HDsW8gU2VyaWdyYWbDrWE!5e0!3m2!1ses!2ses!4v1562489987290!5m2!1ses!2ses"
+            width="800"
+            height="600"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h5 class="mb-0">Teléfono:</h5>
+        <div class="mb-4"><a href="tel:+34-985-37-33-83">985 373 383</a></div>
+        <h5 class="mb-0">Móvil:</h5>
+        <div class="mb-4"><a href="tel:+34-657-96-08-80">657 960 880</a></div>
+        <h5 class="mb-0">Email:</h5>
+        <div class="mb-4">
+          <a href="mailto:info@canoserigrafia.com">info@canoserigrafia.com</a>
+        </div>
+        <h5 class="mb-0">Dirección:</h5>
+        <div class="mb-4">
+          Calle Cienfuegos, Nº5 - Bajo
+          <br />
+          Gijón, Asturias 33205
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class=" p-4 my-4">
+    <hr class="divider" />
+    <h2 class="text-center text-lg text-uppercase my-0">
+      Formulario de
+      <strong>Contacto</strong>
+    </h2>
+    <hr class="divider" />
+    <form name="sentMessage" id="contactForm" novalidate>
+      <div class="row">
+        <div class="form-group col-lg-4">
+          <label class="text-heading">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            required
+            [(ngModel)]="name"
+            name="name"
+            data-validation-required-message="Por favor introduce tu nombre."
+          />
+          <p class="help-block text-danger"></p>
+        </div>
+        <div class="form-group col-lg-4">
+          <label class="text-heading">Dirección de correo</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            required
+            [(ngModel)]="email"
+            name="email"
+            data-validation-required-message="Por favor introduce tu dirección de correo."
+          />
+          <p class="help-block text-danger"></p>
+        </div>
+        <div class="form-group col-lg-4">
+          <label class="text-heading">Número de teléfono</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            required
+            [(ngModel)]="phone"
+            name="phone"
+            data-validation-required-message="Por favor introduce tu número de teléfono."
+          />
+          <p class="help-block text-danger"></p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="form-group col-lg-12">
+          <label class="text-heading">Mensaje</label>
+          <textarea
+            class="form-control"
+            rows="6"
+            id="message"
+            required
+            [(ngModel)]="message"
+            name="message"
+            data-validation-required-message="Por favor introduce un mensaje."
+          ></textarea>
+          <p class="help-block text-danger"></p>
+          <div id="success"></div>
+          <div class="form-group col-lg-12">
+            <button
+              type="submit"
+              class="btn btn-secondary contactForm"
+              (click)="sendEmail()"
+              [disabled]="isDisabled()"
+            >
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

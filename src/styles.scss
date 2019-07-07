@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/business-casual.css";
+
+body {
+    background-color: rgba(148, 148, 148, 0.2) !important;
+    text-align: justify !important;
+}
+
+a {
+    cursor: pointer;
+}
+
+nav {
+    background-color: #fff !important;
+
+    .logoHeader img {
+        width: 30%;
+    }
+}
+
+footer {
+    background-color: #fff;
+}
+
+.btn:disabled {
+    opacity: 0.15 !important;
+}
+
+button.contactForm {
+    width: 100%;
+}
+
+@media (max-device-width: 812px) {
+    nav a {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
