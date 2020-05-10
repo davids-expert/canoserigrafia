@@ -1,18 +1,17 @@
-<div class="container">
-  <div class=" p-4 my-4">
+<div class="container content">
+  <div class="my-4 carousel">
     <!-- Image Carousel -->
     <ngb-carousel *ngIf="images">
       <ng-template ngbSlide *ngFor="let image of images">
         <img [src]="image.img" alt="Random first slide" />
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption">
           <h3>{{ image.title }}</h3>
           <p>{{ image.subtitle }}</p>
-        </div>
+        </div> -->
       </ng-template>
     </ngb-carousel>
   </div>
-
-  <div class=" p-4 my-4">
+  <!-- <div class=" p-4 my-4">
     <hr class="divider" />
     <h2 class="text-center text-lg text-uppercase my-0">
       Algunos de
@@ -50,5 +49,5 @@
       Además garantizamos que nuestro trato con nuestros clientes es el mejor
       que podemos ofrecer.
     </p>
-  </div>
+  </div> -->
 </div>

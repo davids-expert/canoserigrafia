@@ -1,75 +1,32 @@
 <nav class="navbar navbar-expand-lg navbar-light py-lg-4">
   <div class="text-center d-none d-lg-block logoHeader">
-    <img src="./../assets/img/cagno6.jpg" alt="" />
+    <img src="./../assets/img/cagno6.jpg" alt="" (click)="navigateTo('index')" />
   </div>
   <div class="container">
-    <a
-      class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none"
-      (click)="navigateTo('index')"
-      ><img src="./../assets/img/cagno6.jpg" alt=""
-    /></a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarResponsive"
-      aria-controls="navbarResponsive"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" (click)="navigateTo('index')">
+      <img src="./../assets/img/cagno6.jpg" alt="" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav mx-auto">
-        <li
-          class="nav-item px-lg-4"
-          [ngClass]="page === 'index' ? 'active' : ''"
-        >
-          <a
-            class="nav-link text-uppercase text-expanded"
-            (click)="navigateTo('index')"
-            >Inicio
+        <li class="nav-item px-lg-4" [ngClass]="page === 'index' ? 'active' : ''">
+          <a class="nav-link text-uppercase text-expanded" (click)="navigateTo('index')">Inicio
           </a>
         </li>
-        <li
-          class="nav-item px-lg-4"
-          [ngClass]="page === 'sobre-nosotros' ? 'active' : ''"
-        >
-          <a
-            class="nav-link text-uppercase text-expanded"
-            (click)="navigateTo('sobre-nosotros')"
-            >Sobre Caño</a
-          >
+        <li class="nav-item px-lg-4" [ngClass]="page === 'sobre-nosotros' ? 'active' : ''">
+          <a class="nav-link text-uppercase text-expanded" (click)="navigateTo('sobre-nosotros')">Sobre Caño</a>
         </li>
-        <li
-          class="nav-item px-lg-4"
-          [ngClass]="page === 'servicios' ? 'active' : ''"
-        >
-          <a
-            class="nav-link text-uppercase text-expanded"
-            (click)="navigateTo('servicios')"
-            >Servicios</a
-          >
+        <li class="nav-item px-lg-4" [ngClass]="page === 'servicios' ? 'active' : ''">
+          <a class="nav-link text-uppercase text-expanded" (click)="navigateTo('servicios')">Servicios</a>
         </li>
-        <li
-          class="nav-item px-lg-4"
-          [ngClass]="page === 'trabajos' ? 'active' : ''"
-        >
-          <a
-            class="nav-link text-uppercase text-expanded"
-            (click)="navigateTo('trabajos')"
-            >Trabajos</a
-          >
+        <li class="nav-item px-lg-4" [ngClass]="page === 'trabajos' ? 'active' : ''">
+          <a class="nav-link text-uppercase text-expanded" (click)="navigateTo('trabajos')">Trabajos</a>
         </li>
-        <li
-          class="nav-item px-lg-4"
-          [ngClass]="page === 'contacto' ? 'active' : ''"
-        >
-          <a
-            class="nav-link text-uppercase text-expanded"
-            (click)="navigateTo('contacto')"
-            >Contacto</a
-          >
+        <li class="nav-item px-lg-4" [ngClass]="page === 'contacto' ? 'active' : ''">
+          <a class="nav-link text-uppercase text-expanded" (click)="navigateTo('contacto')">Contacto</a>
         </li>
       </ul>
     </div>
@@ -83,19 +40,19 @@
         <h2>
           <strong>Caño serigrafía</strong>
         </h2>
-        <p>Calle Cienfuegos, 5 - Bajo <br />33205 Gijón (Asturias)</p>
+        <p>📍 Calle Cienfuegos, 5 - Bajo <br />33205 Gijón (Asturias)</p>
         <ul class="list-unstyled">
           <li>
             <i class="fa fa-phone fa-fw"></i>
-            <a href="tel:+34-985-37-33-83">(+34) 985 373 383</a>
+            <a href="tel:+34-985-37-33-83">📞 (+34) 985 373 383</a>
           </li>
-          <li>
+          <!-- <li>
             <i class="fa fa-mobile fa-fw"></i>
             <a href="tel:+34-657-96-08-80">(+34) 657 960 880</a>
-          </li>
+          </li> -->
           <li>
             <i class="fa fa-envelope-o fa-fw"></i>
-            <a href="mailto:info@canoserigrafia.com">info@canoserigrafia.com</a>
+            <a href="mailto:info@canoserigrafia.com">📩 info@canoserigrafia.com</a>
           </li>
         </ul>
         <hr class="small" />
@@ -103,7 +60,7 @@
         <p>
           Desarrollado por
           <a href="https://www.linkedin.com/in/guillermotti">
-            Guillermo Vigil
+            Guillermo Vigil 🚀
           </a>
         </p>
       </div>

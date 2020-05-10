@@ -2,8 +2,16 @@
 @import "./assets/styles/business-casual.css";
 
 body {
-    background-color: rgba(148, 148, 148, 0.2) !important;
+    // background-color: rgba(148, 148, 148, 0.2) !important;
     text-align: justify !important;
+    .content {
+        min-height: calc(100vh - 480px);
+
+        .carousel {
+            border-radius: 300px;
+            overflow: auto;
+        }
+    }
 }
 
 a {
@@ -15,11 +23,13 @@ nav {
 
     .logoHeader img {
         width: 30%;
+        cursor: pointer;
     }
 }
 
 footer {
-    background-color: #fff;
+    background-color: rgba(148, 148, 148, 0.08) !important;
+    // background-color: #fff;
 }
 
 .btn:disabled {
@@ -28,6 +38,14 @@ footer {
 
 button.contactForm {
     width: 100%;
+}
+
+.servicios img:hover {
+    filter: opacity(0.5);
+    &.roly {
+        -webkit-filter: invert(100%) opacity(0.5);
+        filter: invert(100%) opacity(0.5);
+    }
 }
 
 @media (max-device-width: 812px) {

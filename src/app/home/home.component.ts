@@ -11,17 +11,17 @@ export class HomeComponent implements OnInit {
   constructor() {
     this.images = [
       {
-        img: './../../assets/img/portada1.jpg',
+        img: './../../assets/img/home/diseño.jpg',
         title: 'Estampado',
         subtitle: 'Realización de estampaciones.'
       },
       {
-        img: './../../assets/img/portada2.jpg',
+        img: './../../assets/img/home/muyeres.png',
         title: 'Diseño',
         subtitle: 'Diseñamos diferentes modelos.'
       },
       {
-        img: './../../assets/img/portada3.jpg',
+        img: './../../assets/img/home/pintura.jpg',
         title: 'Cercanía',
         subtitle: 'Pequeños, medianos y grandes pedidos.'
       }

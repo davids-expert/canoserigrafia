@@ -11,16 +11,33 @@ export class WorksComponent implements OnInit {
 
   constructor() {
     this.images = [
-      { imageUrl: '../../assets/img/ARGÜERO.jpg' },
-      { imageUrl: '../../assets/img/BOLAS 2.jpg' },
-      { imageUrl: '../../assets/img/CAMISETAS 1.jpg' },
-      { imageUrl: '../../assets/img/EUROYEYE.jpg' },
-      { imageUrl: '../../assets/img/LAMBRETTA.jpg' },
-      { imageUrl: '../../assets/img/MANRTA RAY.jpg' },
-      { imageUrl: '../../assets/img/BOLSAS 3.jpg' },
-      { imageUrl: '../../assets/img/MUNJITAS.jpg' },
-      { imageUrl: '../../assets/img/RODRIGO CUEVAS.jpg' },
-      { imageUrl: '../../assets/img/SONIDOPOLIS.jpg' }
+      { imageUrl: '../../assets/img/works/aha.jpg' },
+      { imageUrl: '../../assets/img/works/arguero.jpg' },
+      { imageUrl: '../../assets/img/works/bigbeat.jpg' },
+      { imageUrl: '../../assets/img/works/bolsas1.jpg' },
+      { imageUrl: '../../assets/img/works/bolsas2.jpg' },
+      { imageUrl: '../../assets/img/works/captains.jpg' },
+      { imageUrl: '../../assets/img/works/cuevas.jpg' },
+      { imageUrl: '../../assets/img/works/edgar.jpg' },
+      { imageUrl: '../../assets/img/works/euroyeye.jpg' },
+      { imageUrl: '../../assets/img/works/explosion.jpg' },
+      { imageUrl: '../../assets/img/works/fangoria.jpg' },
+      { imageUrl: '../../assets/img/works/ficx.jpg' },
+      { imageUrl: '../../assets/img/works/folixa.jpg' },
+      { imageUrl: '../../assets/img/works/folixaria.jpg' },
+      { imageUrl: '../../assets/img/works/granda.jpg' },
+      { imageUrl: '../../assets/img/works/kustom.jpg' },
+      { imageUrl: '../../assets/img/works/kustom2.jpg' },
+      { imageUrl: '../../assets/img/works/lambretta.jpg' },
+      { imageUrl: '../../assets/img/works/locos.jpg' },
+      { imageUrl: '../../assets/img/works/lorena72.jpg' },
+      { imageUrl: '../../assets/img/works/malasana.jpg' },
+      { imageUrl: '../../assets/img/works/munjitas.jpg' },
+      { imageUrl: '../../assets/img/works/palentino.jpg' },
+      { imageUrl: '../../assets/img/works/paradiso.jpg' },
+      { imageUrl: '../../assets/img/works/pauline.jpg' },
+      { imageUrl: '../../assets/img/works/petit.jpg' },
+      { imageUrl: '../../assets/img/works/ray.jpg' }
     ];
   }
 
