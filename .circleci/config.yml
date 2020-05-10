@@ -12,7 +12,7 @@ jobs:
       - run:
           command: npm install --save-dev firebase-tools
       - run:
-          command: ./node_modules/.bin/firebase use canoserigrafia-site
+          command: ./node_modules/.bin/firebase use canoserigrafia-site --token=$FIREBASE_TOKEN
       - run:
           command: |
             cd functions
