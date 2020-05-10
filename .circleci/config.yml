@@ -10,17 +10,12 @@ jobs:
       - run:
           command: ./node_modules/.bin/ng build --prod
       - run:
-          command: mkdir public
-      - run:
-          command: cp -R ./dist/cano-serigrafia/* ./public/
-      - run:
           command: npm install --save-dev firebase-tools
-      # - run:
-      #     command: ./node_modules/.bin/firebase use canoserigrafia-site
+      - run:
+          command: ./node_modules/.bin/firebase use canoserigrafia-site
       - run:
           command: |
             cd functions
-            ls
             npm install
       - run:
           command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
