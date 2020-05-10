@@ -12,13 +12,11 @@ jobs:
       - run:
           command: npm install --save-dev firebase-tools
       - run:
-          command: ./node_modules/.bin/firebase use canoserigrafia-site --token=$FIREBASE_TOKEN
-      - run:
           command: |
             cd functions
             npm install
       - run:
-          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
+          command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
 
 workflows:
   version: 2
